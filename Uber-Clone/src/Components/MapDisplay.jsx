@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import "./mapDisplay.css"; // Assuming you have a CSS file for styling
+import "./MapDisplay.css"; // Assuming you have a CSS file for styling
 const MapDisplay = ({ pickup, dropoff, setDistanceInfo, showDrivers, driverLocations }) => {
   const mapRef = useRef(null);
   const mapInstance = useRef(null);
