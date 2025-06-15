@@ -1,0 +1,145 @@
+/* HeroSection.css */
+
+.hero-map-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.hero-left h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.hero-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.hero-inputs input,
+.hero-inputs select {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border 0.2s;
+}
+
+.hero-inputs input:focus,
+.hero-inputs select:focus {
+  border-color: #000;
+  outline: none;
+}
+
+.hero-actions {
+  margin-top: 1rem;
+}
+
+.hero-actions button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hero-actions button:hover {
+  background-color: #333;
+}
+
+.distance-summary {
+  margin-top: 1rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.vehicle-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.vehicle-card {
+  flex: 1 1 150px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.vehicle-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.vehicle-card.selected {
+  border: 2px solid #007bff;
+  background-color: #eaf4ff;
+}
+
+.vehicle-card h4 {
+  margin-bottom: 0.5rem;
+}
+
+.moto {
+  margin-top: 1rem;
+}
+
+.moto button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.moto button:hover {
+  background-color: #0056b3;
+}
+
+.hero-map {
+  flex: 1;
+  min-height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-map-container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .vehicle-cards {
+    flex-direction: column;
+  }
+
+  .hero-map {
+    height: 300px;
+  }
+}

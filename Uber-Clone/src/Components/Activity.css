@@ -1,0 +1,82 @@
+.activity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: #f9f9f9;
+}
+
+.activity-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.activity-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.activity-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.activity-content button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.activity-content button:hover {
+  background-color: #333;
+}
+
+.signup {
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+
+.signup a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+.activity-image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.activity-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .activity {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .activity-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .activity-content {
+    padding: 0 10px;
+  }
+}

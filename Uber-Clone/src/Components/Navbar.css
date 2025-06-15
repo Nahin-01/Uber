@@ -1,0 +1,210 @@
+/* Base */
+.navbar {
+  background: black;
+  color: white;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a {
+  color: white;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+button {
+  background: white;
+  color: black;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-btn,
+.signup-btn,
+.logout-btn {
+  background: #fff;
+  color: #000;
+}
+
+.dropdown, .nested-dropdown {
+  position: relative;
+}
+
+.dropdown-content, .nested-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 10px;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nested-dropdown:hover .nested-content {
+  display: block;
+  left: 100%;
+  top: 0;
+}
+
+.signup-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 10px;
+  top: 100%;
+  right: 0;
+}
+
+.signup-dropdown:hover .signup-content {
+  display: block;
+}
+
+.user-info {
+  margin-right: 8px;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 16px;
+    border-radius: 6px;
+    z-index: 1000;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+ /* ...existing styles remain unchanged... */
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  margin-left: 16px;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #111;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    left: 16px;
+    border-radius: 6px;
+    z-index: 1001;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide everything except logo, login/signup OR logout/user-info */
+  .left > a:not(.logo) {
+    display: none;
+  }
+
+  .right > button,
+  .right > span {
+    display: none;
+  }
+
+  .right .login-btn,
+  .right .signup-btn,
+  .right .logout-btn,
+  .right .user-info {
+    display: inline-block;
+  }
+
+  .signup-dropdown,
+  .signup-content {
+    display: none;
+  }
+
+  .right {
+    gap: 8px;
+  }
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 1000;
+}
+}

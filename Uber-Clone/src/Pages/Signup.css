@@ -1,0 +1,68 @@
+.signup-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.signup-container h2 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.signup-container input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.continue-btn:hover {
+  background-color: #333;
+}
+
+.google-btn,
+.apple-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.google-btn:hover,
+.apple-btn:hover {
+  background-color: #f2f2f2;
+}
+
+.divider {
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.qr-code-login {
+  margin-top: 1.5rem;
+  color: #0073ff;
+  cursor: pointer;
+  font-weight: 500;
+}

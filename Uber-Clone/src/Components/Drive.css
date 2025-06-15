@@ -1,0 +1,84 @@
+.drive-image {
+  background-color: #f7f7f7;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.drive {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.drive img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.drive-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.drive-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.drive-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.drive-content button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.drive-content button:hover {
+  background-color: #333;
+}
+
+.signin {
+  margin-top: 16px;
+  font-size: 0.95rem;
+}
+
+.signin a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signin a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .drive {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .drive-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .drive-content {
+    padding: 0 10px;
+  }
+}
