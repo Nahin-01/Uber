@@ -96,7 +96,7 @@ export default function HeroSection() {
   return (
     <div className="hero-map-container">
       <div className="hero-left">
-        <h1>Go Anywhere With Uber</h1>
+        <h1>Go Anywhere With My_Ride</h1>
         <div className="hero-inputs">
           <input
             ref={pickupRef}

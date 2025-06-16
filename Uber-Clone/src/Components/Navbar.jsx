@@ -21,7 +21,7 @@ export default function Navbar({ showFull = true }) {
     <>
       <nav className="navbar">
         <div className="left">
-          <Link to="/" className="logo">Uber</Link>
+          <Link to="/" className="logo">Home</Link>
           <div className="hamburger" onClick={toggleMenu}>
             <div></div>
             <div></div>
